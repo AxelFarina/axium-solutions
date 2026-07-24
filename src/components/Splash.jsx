@@ -38,8 +38,8 @@ export default function Splash({ onDone }) {
       }
       if (rootRef.current) rootRef.current.style.pointerEvents = 'none'
       onDone?.()
-    }, 2700))
-    timers.push(setTimeout(() => setGone(true), 6800))
+    }, 3200))
+    timers.push(setTimeout(() => setGone(true), 7300))
     return () => timers.forEach(clearTimeout)
   }, [onDone])
 

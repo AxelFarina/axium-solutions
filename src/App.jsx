@@ -19,7 +19,7 @@ export default function App() {
   const t = dict[lang]
 
   // While the splash plays, hold the nav/hero copy hidden, then stagger it in
-  // (2700ms splash trigger + 2000ms, +260ms per element — same as the prototype).
+  // (3200ms splash trigger + 2000ms, +260ms per element — same as the prototype).
   useEffect(() => {
     if (!showSplash) return
     const intros = Array.from(document.querySelectorAll('[data-intro]'))
@@ -32,7 +32,7 @@ export default function App() {
         el.style.transition = 'opacity 1.2s ease, transform 1.2s cubic-bezier(.2,.7,.2,1)'
         el.style.opacity = '1'
         el.style.transform = 'translateY(0)'
-      }, 4700 + i * 260),
+      }, 5200 + i * 260),
     )
     return () => timers.forEach(clearTimeout)
   }, [showSplash])
