@@ -7,7 +7,7 @@ export default function Footer({ t }) {
     e.preventDefault()
     const subject = encodeURIComponent('Newsletter subscription')
     const body = encodeURIComponent(`Please subscribe: ${email}`)
-    window.location.href = `mailto:hello@axiumsolutions.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:axfarina@axiumsolutions.net?subject=${subject}&body=${body}`
   }
 
   return (
@@ -41,9 +41,9 @@ export default function Footer({ t }) {
           <div>
             <div className="footer-col-title">{t.colContact}</div>
             <div className="footer-links">
-              <a href="mailto:hello@axiumsolutions.com">hello@axiumsolutions.com</a>
-              <a href="mailto:support@axiumsolutions.com">support@axiumsolutions.com</a>
-              <span>+1 (000) 000-0000</span>
+              <a href="mailto:axfarina@axiumsolutions.net">axfarina@axiumsolutions.net</a>
+              <a href="tel:+15133994175">+1 513-399-4175</a>
+              <span>6545 Market Ave. North, STE 100<br />Canton, OH 44721</span>
             </div>
           </div>
         </div>
