@@ -4,6 +4,8 @@ import Splash from './components/Splash.jsx'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
 import Services from './components/Services.jsx'
+import Lab from './components/Lab.jsx'
+import Transform from './components/Transform.jsx'
 import Process from './components/Process.jsx'
 import Globe from './components/Globe.jsx'
 import Contact from './components/Contact.jsx'
@@ -41,8 +43,10 @@ export default function App() {
       <Nav t={t} lang={lang} setLang={setLang} />
       <Hero t={t} />
       <Services t={t} />
-      <Process t={t} />
+      <Lab t={t} />
+      <Transform t={t} />
       <Globe t={t} />
+      <Process t={t} />
       <Contact t={t} />
       <Footer t={t} />
     </>

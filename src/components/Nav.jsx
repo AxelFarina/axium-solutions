@@ -2,10 +2,11 @@ export default function Nav({ t, lang, setLang }) {
   return (
     <nav className="nav" data-intro>
       <a href="#top"><img src="assets/logo-white-crop.png" alt="Axium Solutions" className="nav-logo" /></a>
-      <div className="nav-links">
+      <div className="nav-pill">
         <a href="#services">{t.navServices}</a>
         <a href="#top">{t.navPlatforms}</a>
         <a href="#process">{t.navProcess}</a>
+        <a href="#transform">{t.navTransform}</a>
       </div>
       <div className="nav-right">
         <div className="lang-toggle">
